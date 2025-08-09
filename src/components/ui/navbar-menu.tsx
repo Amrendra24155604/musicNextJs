@@ -2,15 +2,15 @@
 import React from "react";
 import { motion } from "motion/react";
 
+import { Transition } from "framer-motion";
 
-
-const transition = {
-  type: "spring",
-  mass: 0.5,
-  damping: 11.5,
-  stiffness: 100,
+const transition: Transition = {
+  type: "spring", // ✅ 'spring' is a valid AnimationGeneratorType
+  mass: 1,
+  damping: 20,
+  stiffness: 300,
   restDelta: 0.001,
-  restSpeed: 0.001,
+  restSpeed: 0.01,
 };
 
 export const MenuItem = ({
